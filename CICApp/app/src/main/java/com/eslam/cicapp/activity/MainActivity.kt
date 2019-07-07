@@ -1,4 +1,4 @@
-package com.eslam.cicapp.activity
+package com.eslam.myretrofit
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("WrongConstant")
     private fun declearRecycleView() {
+
         rvNames.layoutManager=LinearLayoutManager(this@MainActivity,LinearLayoutManager.VERTICAL,false)
         rvNames.setHasFixedSize(true)
         rvNames.adapter= NamesAdapter(this@MainActivity, mutableListOf("islam","aziz","bade3","hana"))
